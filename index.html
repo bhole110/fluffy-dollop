@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TG @BHOLENOTOP ADS</title>
+
+  <!-- ✅ Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1031892388995885');  /* 🔹 Replace with your Pixel ID */
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1031892388995885&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ✅ End Meta Pixel Code -->
+
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 450px;
+      height: 95vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: 110px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(22px, 5vw, 32px);
+      color: #ffcc00;
+      margin-bottom: 10px;
+      font-weight: 800;
+      text-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
+    }
+
+    p {
+      font-size: clamp(13px, 3.5vw, 18px);
+      margin: 4px 0;
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #ffcc00, #ff5500);
+      border: none;
+      padding: clamp(12px, 3vw, 15px) clamp(25px, 5vw, 35px);
+      border-radius: 30px;
+      font-size: clamp(15px, 4vw, 18px);
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+      margin-top: 14px;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0px 6px 20px rgba(255, 136, 0, 0.6);
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover { transform: scale(1.05); }
+
+    .timer {
+      margin-top: 14px;
+      color: red;
+      font-weight: bold;
+      font-size: clamp(13px, 3.5vw, 17px);
+    }
+
+    .ads-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 22px;
+      font-size: clamp(13px, 3.5vw, 16px);
+      font-weight: bold;
+      color: #fff;
+      background: #007bff;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .ads-btn:hover { background: #0056b3; }
+
+    footer {
+      position: absolute;
+      bottom: 8px;
+      font-size: clamp(10px, 3vw, 14px);
+      opacity: 0.6;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ✅ Logo -->
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <!-- ✅ Headline -->
+    <h2>SURAJ SURESHOTS</h2>
+
+    <!-- ✅ Text -->
+    <p>🔥 Get Daily Live Sureshot Updates</p>
+    <p>💯 Join Our Telegram & Never Miss a Chance</p>
+
+    <!-- ✅ CTA Button -->
+    <a href="https://t.me/+nPyhH6mPYnZmZjM1" class="btn" id="joinBtn" onclick="fbq('track', 'Lead');">
+      🚀 JOIN TELEGRAM NOW
+    </a>
+
+    <!-- ✅ Timer -->
+    <p class="timer" id="timer">⏳ Offer ends in: <span id="countdown">15</span> seconds</p>
+
+    <!-- ✅ Setup Ads Button -->
+    <a href="https://t.me/+nPyhH6mPYnZmZjM1" class="btn" id="joinBtn" onclick="fbq('track', 'Lead');">
+      🚀 JOIN TELEGRAM NOW
+    </a>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer>© 2025 @BHOLENOTOP ADS TG. All rights reserved.</footer>
+
+  <!-- ✅ Countdown Script -->
+  <script>
+    let timeLeft = 15;
+    const countdownElement = document.getElementById("countdown");
+    const timerText = document.getElementById("timer");
+
+    const countdown = setInterval(() => {
+      timeLeft--;
+      countdownElement.textContent = timeLeft;
+      
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        timerText.textContent = "✅ Time's up! Redirecting...";
+        fbq('track', 'Lead'); // Track lead event
+        setTimeout(() => {
+          window.location.href = "https://t.me/+nPyhH6mPYnZmZjM1";
+        }, 1000);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
